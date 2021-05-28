@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.nav-logo {
+    width: 277px;
+    height: 49, 86px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topmenu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+.topmenu li {
+    display: inline;
+    margin: 2% 0;
+    padding: 1% 0;
+    text-align: right;
+    line-height: 4rem;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.topmenu li {
+    padding: 1rem
+}
+
+.topmenu li:hover {
+    text-decoration: underline;
+    background-color: #FE142F;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+
+.topmenu li a:hover {
+    color: #FFFFFF
+}
+
+.container-main {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #232323;
+    color: #FFFFFF;
+    /* padding:2rem; */
+    border-radius: 0.5rem;
+}
+
+.container-left {
+    /* width:40%; */
+    z-index: 2;
+}
+
+.container-title {
+    /* width:55%; */
+    font-size: 3.5rem;
+    padding: 2.5rem;
+}
+
+.container-text {
+    /* width:45%; */
+    padding-left: 2rem;
+    font-size: 1.7rem;
+    padding-top: 18rem;
+}
+
+.container-right {
+    /* width:60%; */
+}
+
+.container-right img {
+    border-radius: 0.5rem;
+}
+
+.title {
+    width: 1000px;
+    position: absolute;
+}
+
+.button {
+    background-color: #FE142F;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 190px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+}
+
+/*********media queries**********/
