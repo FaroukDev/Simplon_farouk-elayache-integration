@@ -65,7 +65,7 @@ body {
 }
 
 .container-left {
-    /* width:40%; */
+    /* width:40%;*/
     z-index: 2;
 }
 
@@ -166,7 +166,7 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 20%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
@@ -184,4 +184,103 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     cursor: pointer;
   }
 
+.copyright{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    color:#FE142F;
+    font-weight:bold;
+}
+
+
+
 /*********media queries**********/
+
+@media all and (min-width: 360px) and (max-width: 640px)
+{
+
+    .container{
+       
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+
+    }
+    .container-main{
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+       
+    }
+
+    .container-left{
+        background-color: #FFFFFF;
+        color: black;
+    }
+    .title{
+       width:max-content;
+       font-size: 3rem;
+       
+    }
+    .container-text {
+        /* width: 45%; */
+        padding-left: 2rem;
+        font-size: 1.7rem;
+        padding-top: 5rem;
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        color:#FFFFFF;
+        font-size: 2rem;
+    }
+    .copyright{
+        
+        font-size: 2rem;
+    }
+
+    input[type="checkbox"]:not(:checked) + ul {
+        display: none;
+       }
+       input[type="checkbox"]:checked + ul {
+       display: flex;
+       }
+       ul {
+        display: flex;
+        flex-direction: row;
+    }
+    ul {
+        flex-direction: column;
+      }
+      /* Gestion de l'affichage du menu */
+    input[type="checkbox"]:not(:checked) ~ ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+    
+    /* Gestion de la checkbox */
+    input[type="checkbox"] + label:before {
+        font-family: FontAwesome;
+        font-size: 30px;
+    }
+
+    input[type="checkbox"] + label:before {
+        content: "\f0c9";
+    }
+
+    input[type="checkbox"]:not(:checked) + label:before {
+        content: "\f0c9";
+    }
+
+    input[type="checkbox"]:checked + label:before {
+        content: "\f00d";
+    }
+
+    }
