@@ -5,6 +5,7 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
+    
 }
 
 .container {
@@ -192,42 +193,68 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     font-weight:bold;
 }
 
+.fa {
+   
+    color:#FFFFFF;
+    background-color: #FFFFFF;
+}
+#burger_checkbox{
+    display: none;
+}
+
 
 
 /*********media queries**********/
 
-@media all and (min-width: 360px) and (max-width: 640px)
+@media all and (min-width: 320px) and (max-width: 1024px)
 {
 
     .container{
-       
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
-        padding: 1rem;
+        padding-top: 2rem;
 
+    }
+
+    .nav-logo{
+        width:50%
     }
     .container-main{
         display: flex;
         flex-direction: column;
-        width:fit-content;
+        width:auto;
+        background-color: #FFFFFF;
        
     }
 
     .container-left{
         background-color: #FFFFFF;
         color: black;
+        margin: 0 auto;
+    }
+    .container-right{
+        background-color: #FFFFFF;
+        margin: 0 auto;
+    }
+    .container-right img{
+        width:100%;
+        margin: 0 auto;
+        
     }
     .title{
-       width:max-content;
-       font-size: 3rem;
+       width:90%;
+       font-size: 2.5rem;
        
+    }
+    .button{
+        width: 70%;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
     }
     .container-text {
         /* width: 45%; */
         padding-left: 2rem;
-        font-size: 1.7rem;
+        font-size: 1rem;
         padding-top: 5rem;
     }
     .modal-content {
@@ -237,11 +264,20 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
         border: 1px solid #888;
         width: 50%;
         color:#FFFFFF;
-        font-size: 2rem;
+        font-size: 0.9rem;
     }
     .copyright{
         
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+
+    .fa {
+   
+        color:#000000;
+        background-color: #FFFFFF;
+    }
+    #burger_checkbox{
+        display: inline-block;
     }
 
     input[type="checkbox"]:not(:checked) + ul {
@@ -282,5 +318,8 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     input[type="checkbox"]:checked + label:before {
         content: "\f00d";
     }
+
+
+    
 
     }
