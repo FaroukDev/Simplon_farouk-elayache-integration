@@ -16,7 +16,7 @@ body {
 
 .nav-logo {
     width: 277px;
-    height: 49, 86px;
+    margin-top: 1.5rem;
 }
 
 .container-header {
@@ -79,7 +79,7 @@ body {
 .container-text {
     /* width:45%; */
     padding-left: 2rem;
-    font-size: 1.7rem;
+    font-size: 1rem;
     padding-top: 18rem;
 }
 
@@ -94,6 +94,7 @@ body {
 .title {
     width: 1000px;
     position: absolute;
+    font-size: 7rem;
 }
 
 .button {
@@ -191,16 +192,19 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     margin-top: 4rem;
     color:#FE142F;
     font-weight:bold;
+    margin-bottom: 2rem;
 }
 
 .fa {
-   
     color:#FFFFFF;
     background-color: #FFFFFF;
+   
+    
 }
 #burger_checkbox{
     display: none;
 }
+
 
 
 
@@ -217,7 +221,9 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     }
 
     .nav-logo{
-        width:50%
+        width:50%;
+        margin-top: 0rem;
+        
     }
     .container-main{
         display: flex;
@@ -318,7 +324,14 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     input[type="checkbox"]:checked + label:before {
         content: "\f00d";
     }
+    .button-sub input{
+        width:70%;
+    }
+    .button-sub{
+        margin: 0 auto;
+        text-align: center;
 
+    }
 
     
 
