@@ -36,3 +36,20 @@ email.addEventListener("keyup", function (event) {
     email.setCustomValidity("Ok");
   }
 });
+
+/**** check if email is empty****/
+
+// function required()
+// {
+// let empt = document.forms["form1"]["email"].value;
+// if (empt == "")
+// {
+// alert("Please input a Value");
+// return false;
+// }
+// else 
+// {
+// alert('Code has accepted : you can try another');
+// return true; 
+// }
+// }
