@@ -188,8 +188,8 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
 
 .copyright{
     font-family: 'Roboto', sans-serif;
-    margin-left: 3rem;
-    margin-top: 4rem;
+    
+    margin-top: 3rem;
     color:#FE142F;
     font-weight:bold;
     margin-bottom: 2rem;
