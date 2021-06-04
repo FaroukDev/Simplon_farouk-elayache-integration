@@ -23,3 +23,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/********Email Validation****/
+
+/*email*/
+let email = document.getElementById("email").validity.valid;
+
+email.addEventListener("keyup", function (event) {
+  if(email.validity.typeMismatch) {
+    email.setCustomValidity("J'attend un e-mail, mon cher !");
+  } else {
+    email.setCustomValidity("Ok");
+  }
+});

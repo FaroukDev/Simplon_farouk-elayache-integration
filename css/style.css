@@ -5,7 +5,6 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
-    
 }
 
 .container {
@@ -111,7 +110,7 @@ body {
 
 /********* Modal ***************/
 
-input[type=text],input[type=email],input[type=date],input[type=number],  select {
+input[type=text], input[type=email], input[type=date], input[type=number], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -119,9 +118,9 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
-  input[type=submit] {
+input[type=submit] {
     width: 30%;
     background-color: #FE142F;
     color: white;
@@ -130,129 +129,136 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    
+}
 
-  }
-  
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-  .form{
+}
+
+.form {
     border-radius: 5px;
     background-color: #232323;
     padding: 20px;
     font-family: 'DM Sans', sans-serif;
-  }
-  .button-sub input{
-      text-align: center;
-  }
+}
 
-  /* The Modal (background) */
+.button-sub {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button-sub input {
+    text-align: center;
+    width: 7rem;
+}
+
+/* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #232323;
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 20%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
+    width: 20%;
+    font-size: 0.8rem;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover, .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-.copyright{
+.copyright {
     font-family: 'Roboto', sans-serif;
-    
     margin-top: 3rem;
-    color:#FE142F;
-    font-weight:bold;
+    color: #FE142F;
+    font-weight: bold;
     margin-bottom: 2rem;
 }
 
 .fa {
-    color:#FFFFFF;
+    color: #FFFFFF;
     background-color: #FFFFFF;
-   
-    
 }
-#burger_checkbox{
+
+#burger_checkbox {
     display: none;
 }
-
-
-
-
+.term1, .term2{
+    margin-top:0.6rem;
+    margin-bottom:0.6rem;
+}
 /*********media queries**********/
 
-@media all and (min-width: 320px) and (max-width: 1024px)
-{
-
-    .container{
+@media all and (min-width: 320px) and (max-width: 1024px) {
+    .container {
         width: 90%;
         margin: 0 auto;
         padding-top: 2rem;
-
     }
-
-    .nav-logo{
-        width:50%;
+    .nav-logo {
+        width: 50%;
         margin-top: 0rem;
-        
     }
-    .container-main{
+    .container-main {
         display: flex;
         flex-direction: column;
-        width:auto;
+        width: auto;
         background-color: #FFFFFF;
-       
     }
-
-    .container-left{
+    .container-left {
         background-color: #FFFFFF;
         color: black;
         margin: 0 auto;
     }
-    .container-right{
+    .container-right {
         background-color: #FFFFFF;
         margin: 0 auto;
     }
-    .container-right img{
-        width:100%;
+    .container-right img {
+        width: 100%;
         margin: 0 auto;
-        
     }
-    .title{
-       width:90%;
-       font-size: 2.5rem;
-       
+    .title {
+        width: 90%;
+        font-size: 2.5rem;
     }
-    .button{
+    .button {
         width: 70%;
         margin-left: 3rem;
         margin-bottom: 2rem;
@@ -269,70 +275,58 @@ input[type=text],input[type=email],input[type=date],input[type=number],  select 
         padding: 20px;
         border: 1px solid #888;
         width: 50%;
-        color:#FFFFFF;
+        color: #FFFFFF;
         font-size: 0.9rem;
     }
-    .copyright{
-        
+    .copyright {
         font-size: 1rem;
     }
-
     .fa {
-   
-        color:#000000;
+        color: #000000;
         background-color: #FFFFFF;
     }
-    #burger_checkbox{
+    #burger_checkbox {
         display: inline-block;
     }
-
-    input[type="checkbox"]:not(:checked) + ul {
+    input[type="checkbox"]:not(:checked)+ul {
         display: none;
-       }
-       input[type="checkbox"]:checked + ul {
-       display: flex;
-       }
-       ul {
+    }
+    input[type="checkbox"]:checked+ul {
+        display: flex;
+    }
+    ul {
         display: flex;
         flex-direction: row;
     }
     ul {
         flex-direction: column;
-      }
-      /* Gestion de l'affichage du menu */
-    input[type="checkbox"]:not(:checked) ~ ul {
+    }
+    /* Gestion de l'affichage du menu */
+    input[type="checkbox"]:not(:checked)~ul {
         display: none;
     }
-    input[type="checkbox"]:checked ~ ul {
+    input[type="checkbox"]:checked~ul {
         display: flex;
     }
-    
     /* Gestion de la checkbox */
-    input[type="checkbox"] + label:before {
+    input[type="checkbox"]+label:before {
         font-family: FontAwesome;
         font-size: 30px;
     }
-
-    input[type="checkbox"] + label:before {
+    input[type="checkbox"]+label:before {
         content: "\f0c9";
     }
-
-    input[type="checkbox"]:not(:checked) + label:before {
+    input[type="checkbox"]:not(:checked)+label:before {
         content: "\f0c9";
     }
-
-    input[type="checkbox"]:checked + label:before {
+    input[type="checkbox"]:checked+label:before {
         content: "\f00d";
     }
-    .button-sub input{
-        width:70%;
+    .button-sub input {
+        width: 70%;
     }
-    .button-sub{
+    .button-sub {
         margin: 0 auto;
         text-align: center;
-
     }
-
-    
-
-    }
+}
